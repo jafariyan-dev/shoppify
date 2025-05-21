@@ -1,0 +1,127 @@
+:root {
+  --color_fff: #fff;
+  --color_f44336: #f44336;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+header {
+  background-color: var(--color_f44336);
+}
+.contianer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header_top {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; */
+}
+nav {
+  width: 1170px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  margin: 11px 10px;
+  font-weight: 300;
+}
+.links li {
+  list-style-type: none;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+.links li a {
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--color_fff);
+  font-size: 10px;
+}
+.currency {
+  color: var(--color_fff);
+  font-size: 12px;
+  width: 110px;
+  display: flex;
+  gap: 2px;
+  background-color: rgba(53, 53, 53, 0.15);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.currency svg {
+  max-width: 15px;
+}
+.currency span{
+    padding-left: 5px;
+}
+.currency ul {
+  list-style-type: none;
+}
+.dropdown_menu {
+  margin: 10px;
+  width: 10px;
+  position: relative;
+}
+.dropdown_menu ul {
+    padding: 0 9px;
+  list-style-type: none;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  left: 0;
+  top: 23px;
+  right: auto;
+  transition: opacity 0.3s,top 0.3s ;
+}
+.dropdown_menu ul li{
+      padding-top: 12px;
+      align-items: center;
+}
+.dropdown_menu ul li:last-child{
+    padding-bottom: 12px;
+}
+.dropdown_menu ul li:hover{
+    font-weight: 600;
+    background-color: rgba(174, 174, 174, 0.2);
+    border-radius: 3px;
+}
+.currency:hover .dropdown_menu ul {
+  visibility: visible;
+  opacity: 1;
+  width: 170px;
+  left: -97px;
+  top: 15px;
+  box-shadow:1px 1px 5px rgba(111, 111, 111,0.5) ;
+  background-color: var(--color_fff);
+
+}
+
+.dropdown_menu ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 40px 20px;
+}
+.dropdown_menu ul li a img {
+  width: 20px;
+}
+.header_bottom {
+}
+.shopping_cart {
+}
+.shopping_cart_text {
+}
+#header_line {
+  content: "";
+  background-color: #d3d3d3;
+  height: 1px;
+  width: 100%;
+}
