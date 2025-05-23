@@ -201,18 +201,18 @@ nav {
 }
 
 .category {
+  background-color: rgb(31, 31, 31);
+  width: 293px;
+  height: 44px;
   display: flex;
   align-items: center;
-  position: static;
-  width: 293px;
   cursor: pointer;
-  height: 44px;
-  background-color: rgb(31, 31, 31);
 }
-.category:hover .dropdown{
+
+.category:hover .nav{
   visibility: visible;
   opacity: 1;
-
+  transition: all .3s linear 0s;
 }
 .title_category {
   text-transform: uppercase;
@@ -231,22 +231,38 @@ nav {
 }
 .nav {
   background-color: #fff;
-  display: block;
   height: 494px;
-  width: 295px;
-  padding-top: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-    position: relative;
-  top: 269px;
-  left:-137px;
+  width: 292px;
+  position: absolute;
+  top: 201px;
+   opacity: 0;
+  visibility: hidden;
 }
+
 .dropdown {
+  display: grid;
+ grid: 
+ 'item'
+ 'item'
+ 'item'
+ 'item'
+ 'item'
+ 'item'
+ 'item'
+ 'item';
+ grid-template-columns: 300px;
+ grid-row-gap: 0px;
   list-style-type: none;
   margin: 0;
-  opacity: 0;
-  visibility: hidden;
+}
+.grid_item1 >a{
+  grid-area: item;
+}
+.grid_item1{
+  height: 44px;
+}
+.grid_item1 a svg{
+  right: -90px;
 }
 .dropdown_item {
   border-top: 0;
@@ -254,35 +270,111 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-
 }
 .dropdown_item a {
   position: relative;
-    padding: 15px 20px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #666;
-    background: transparent;
-    font-weight: 400;
-    line-height: 30px;
-    transition: all .35s ease-out;
-    width: 100%;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #666;
+  background: transparent;
+  font-weight: 400;
+  line-height: 30px;
+  transition: all 0.35s ease-out;
+  width: 100%;
 }
 
-.dropdown_item a img{
-    position: relative;
-    display: inline;
-    top: 7px;
-    width: 20px;
-    margin-right: 8px;
-    opacity: 0.5;
+.dropdown_item >a img {
+  position: relative;
+  display: inline;
+  top: 7px;
+  width: 20px;
+  margin-right: 8px;
+  opacity: 0.5;
 }
-.nav_subMenu_cloths {
-  display: none;
+.dropdown_item a:hover {
+  color: var(--color_f44336);
 }
+.dropdown_item a svg {
+  color: black;
+  width: 12px;
+  right: 17px;
+  margin-left: 0;
+  margin-top: 5px;
+}
+.sub_menu{
+   position: relative;
+    left: 38%;
+    top: 209px;
+    right: 0;
+    margin-right: 0;
+    width: 185px;
+    height: 460px;
+}
+.fashion{
+  height: 44px;
+}
+.fashion:hover .nav_subMenu_cloths{
+visibility: visible;
+opacity: 1;
+transition: all .3s linear 0s;
+}
+.fashion a svg{
+  right: -90px;
+
+}
+.toys:hover .nav_subMenu_toys{
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s linear 0s;
+}
+.nav_subMenu_cloths{
+opacity: 0;
+visibility: hidden;
+    box-shadow: 0 0 5px #0000003d;
+  }
+.nav_subMenu_cloths ul{
+  list-style-type: none;
+}
+
 .nav_subMenu_toys {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+   box-shadow: 0 0 5px #0000003d;
+   width: 500px;
+  }
+  .products_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  .menu-title{
+     margin: 5px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 0px;
+       position: absolute;
+
+  }
+.product-container{
+display: grid;
+grid-template-rows:1fr ;
+margin-top: 30px;
 }
+.product-container img{
+ overflow: hidden;
+ text-align: center;
+ position: relative;
+}
+.name{
+      text-wrap: wrap;
+    width: 306px;
+    text-align: center;
+}
+
 .nav_subMenu_sports {
   display: none;
 }
