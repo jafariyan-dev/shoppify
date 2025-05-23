@@ -9,65 +9,413 @@
   </head>
   <body>
     <header>
-      <div class="contianer">
-        <div class="header_top">
-          <nav>
-            <ul class="links">
-              <li><a href="#">my account</a></li>
-              <li><a href="#">wishlist</a></li>
-              <li><a href="#">check out</a></li>
-              <li><a href="#">login</a></li>
-              <li><a href="#">register</a></li>
-            </ul>
-          <div class="currency">
-            <span>currency</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
-
-            <div class="dropdown_menu">
-              <ul>
-                <li><a href="#"><img src="images/usaFlag.png" alt="">
-                  usd</a></li>
-                <li><a href="#"><img src="images/europeFlag.png" alt=""> eur</a></li>
-                <li><a href="#"><img src="images/australiaFlag.png" alt=""> aud</a></li>
-                <li><a href="#"><img src="images/gbr.png" alt=""> gbr</a></li>
-                <li><a href="#"><img src="images/jpy.png" alt=""> jpy</a></li>
+      <div class="header_top">
+        <div class="contianer">
+          <div class="header_top">
+            <nav>
+              <ul class="links">
+                <li><a href="#">my account</a></li>
+                <li><a href="#">wishlist</a></li>
+                <li><a href="#">check out</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">register</a></li>
               </ul>
-            </div>
+              <div class="currency">
+                <span>currency</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div class="dropdown_menu">
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/usaFlag.png" alt="" /> usd</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="images/europeFlag.png" alt="" /> eur</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="images/australiaFlag.png" alt="" /> aud</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/gbr.png" alt="" /> gbr</a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/jpy.png" alt="" /> jpy</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
-      <div id="header_line"></div>
-      <div class="contianer">
-        <div class="header_bottom">
-          <div class="header_bottom_right">
-            <a href="#">
-            <div class="shopping_cart"></div>
-            <div class="shopping_cart_text">
-              <span>shopping cart</span> 
-              <span>0</span>
-              <span>items-</span>
-              <span>$0.00</span>
+        <div id="header_line"></div>
+        <div class="contianer">
+          <div class="header_bottom">
+            <div class="header_bottom_right">
+              <a href="#">
+                <div class="shopping_cart"></div>
+                <div class="shopping_cart_text">
+                  <span>shopping cart</span>
+                  <span>0</span>
+                  <span>items-</span>
+                  <span>$0.00</span>
+                </div>
+              </a>
             </div>
-            
-          </a>
-          </div>
-          <div class="header_bottom_center">
-            <div class="search_">
-              <input type="text" id="search_text">
-              <button id="search_btn" type="submit">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-</svg>
-              </button>
+            <div class="header_bottom_center">
+              <div class="search_">
+                <input type="text" id="search_text" placeholder="Search..." />
+                <button id="search_btn" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="header_bottom_left">
-            <img src="images/golmart.png" alt="">
+            <div class="header_bottom_left">
+              <img src="images/golmart.png" alt="" />
+            </div>
           </div>
         </div>
+      </div>
+      <div class="header_category">
+        <div class="container">
+          <div class="row">
+            <div class="category">
+              <span class="title_category">Categories </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+              <div class="nav">
+                <ul class="dropdown">
+                  <li class="dropdown_item">
+                    <a href="#"
+                      ><img src="images/shirt.png" alt="" />
+                      <span>Fathion & Clothing</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        /></svg ></a>
+                    <div class="nav_subMenu_cloths">
+                      <ul>
+                        <li>
+                          <a href="#"> <span>Summer Dresses</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>Casual Dresses</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>Stylish Lace</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>Stylish stripe</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>T-Shirts</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>Accessories</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="#">
+                      <img src="images/computer.png" alt="" />
+                      <span>Electronics & Computer</span></a
+                    >
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="#">
+                      <img src="images/baby_cloths.png" alt="" />
+                      <span>Toys, Kids & Baby</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        /></svg></a>
+                    <div class="nav_subMenu_toys">
+                      <div class="products_menu">
+                        <div class="menu-title">Bestseller</div>
+                        <div class="product-container">
+                          <div class="image">
+                            <a>
+                              <img src="images/products/73_small_2x.jpg" />
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h5 class="name">
+                              <a class="product-name">
+                                Allegra K Women Dots Print Flouncing Patchwork
+                                Dress W Waist Belt
+                              </a>
+                            </h5>
+                            <div class="price">
+                              <span class="old-price">
+                                <span class="money">$76.66</span></span
+                              >
+                              <span class="price">
+                                <span class="money">$68.99</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-container">
+                          <div class="image">
+                            <a>
+                              <img src="images/products/58_small_2x.jpg" />
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h5 class="name">
+                              <a class="product-name">
+                                Allegra K Women Dots Print Flouncing Patchwork
+                                Dress W Waist Belt
+                              </a>
+                            </h5>
+                            <div class="price">
+                              <span class="old-price">
+                                <span class="money">$67.00</span></span
+                              >
+                              <span class="price">
+                                <span class="money">$53.60</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-container">
+                          <div class="image">
+                            <a>
+                              <img src="images/products/65_small_2x.jpg" />
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h5 class="name">
+                              <a class="product-name">
+                                Allegra K Women Dots Print Flouncing Patchwork
+                                Dress W Waist Belt
+                              </a>
+                            </h5>
+                            <div class="price">
+                              <span class="old-price">
+                                <span class="money">$25.00</span></span
+                              >
+                              <span class="price">
+                                <span class="money">$22.50</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-container">
+                          <div class="image">
+                            <a>
+                              <img src="images/products/63_small_2x.jpg" />
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h5 class="name">
+                              <a class="product-name">
+                                Allegra K Women Dots Print Flouncing Patchwork
+                                Dress W Waist Belt
+                              </a>
+                            </h5>
+                            <div class="price">
+                              <span class="money">$54.65</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="#">
+                      <img src="images/paint_roller.png" alt="" />
+                      <span>Home, Garden & Tools</span></a>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="#">
+                      <img src="images/sofa.png" alt="" />
+                      <span>Decor & Furniture</span></a>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="#">
+                      <img src="images/football.png" alt="" />
+                      <span>Sports & Outdoors</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        /></svg></a>
+                    <div class="nav_subMenu_sports">
+                      <div class="row">
+                        <div class="menu_container">
+                          <div class="grid_column">
+                            <div class="menu-title">
+                              <a>Fashion &amp; Clothing</a>
+                            </div>
+                            <ul class="nav-links">
+                              <li>
+                                <a>Summer Dresses</a>
+                              </li>
+
+                              <li>
+                                <a>Casual Dresses</a>
+                              </li>
+
+                              <li>
+                                <a>Stylish Lace</a>
+                              </li>
+
+                              <li>
+                                <a>Stylish Stripe</a>
+                              </li>
+
+                              <li>
+                                <a>T-Shirts</a>
+                              </li>
+
+                              <li>
+                                <a>Accessories</a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="grid_column">
+                            <div class="menu-title">
+                              <a>Shop by Collections</a>
+                            </div>
+                            <ul class="nav-links">
+                              <li>
+                                <a>Fashion & clothing</a>
+                              </li>
+
+                              <li>
+                                <a>Electronics & Computers</a>
+                              </li>
+
+                              <li>
+                                <a>Toys, Kids & Baby</a>
+                              </li>
+
+                              <li>
+                                <a>Home, Garden & Tools</a>
+                              </li>
+
+                              <li>
+                                <a>Decor & furniture</a>
+                              </li>
+                              <li>
+                                <a>Sports & Outdoors</a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="grid_column">
+                            <div class="menu-title">
+                              <a>Informations</a>
+                            </div>
+                            <ul class="nav-links">
+                              <li>
+                                <a>About Page</a>
+                              </li>
+
+                              <li>
+                                <a>Contact Page</a>
+                              </li>
+
+                              <li>
+                                <a>Password Page</a>
+                              </li>
+
+                              <li>
+                                <a>Faq Page</a>
+                              </li>
+
+                              <li>
+                                <a>404 Page</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="#">
+                      <img src="images/gift.png" alt="" />
+                      <span>Gifts, Parties & Holiday</span></a
+                    >
+                  </li>
+                  <li class="dropdown_item">
+                    <img src="images/heart.png" alt="" />
+                    <a href="#"><span>Beauty & Health</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
   </body>
 </html>

@@ -18,4 +18,8 @@
     font-family: 'PoppinsSemiBold';
     src: url(/fonts/Poppins-SemiBold.ttf) format('TrueType');
 }
+@font-face {
+    font-family: 'Rhodium Libre';
+    src: url(/fonts/RhodiumLibre-Regular.ttf) format('TrueType');
+}
 
