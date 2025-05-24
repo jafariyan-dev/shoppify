@@ -1,6 +1,7 @@
 :root {
   --color_fff: #fff;
   --color_f44336: #f44336;
+  --color_aeaeaee6:#aeaeaee6;
 }
 * {
   margin: 0;
@@ -13,7 +14,7 @@ header {
 .header_top {
   background-color: var(--color_f44336);
 }
-.contianer {
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -187,14 +188,13 @@ nav {
   font-size: 12px;
   padding-left: 15px;
   font-weight: 100;
-  color: rgba(174, 174, 174, 0.9);
+  color: var(--color_aeaeaee6);
 }
 .header_category {
   background-color: var(--color_fff);
 }
 
-.row {
-  /* position: relative; */
+.row_cat {
   width: 1170px;
   height: 4rem;
   margin: 0 auto;
@@ -272,6 +272,7 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
+  border-top:1px solid var(--color_aeaeaee6);
 }
 .dropdown_item a {
   position: relative;
@@ -449,4 +450,9 @@ left: 206px;
 .oldPhone{
    width: 141px;
    z-index: -1;
+}
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4rem;
 }
