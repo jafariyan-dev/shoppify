@@ -452,7 +452,7 @@ a.product-name {
 }
 .oldPhone {
   width: 141px;
-  z-index: -1;
+  z-index: 0;
 }
 .row {
   display: flex;
@@ -672,28 +672,94 @@ a.product-name {
   box-shadow: 0 0 5px #0000003d;
 }
 .home_menu .caret  {
-  position: relative;
-  bottom: 35px;
-  left: 20px;
+  position: absolute;
+  top: -15px;
+  left: 36px;
 }
 .shop_menu .caret  {
-  position: relative;
-  bottom: 35px;
-  left: 35.5%;
+  position: absolute;
+  top: -15px;
+  left: 36%;
 }
 .pages_menu .caret  {
-  position: relative;
-  bottom: 35px;
-  left: 42.7%;
+   position: absolute;
+  top: -15px;
+  left: 43%;
 }
 .blog_menu .caret  {
-  position: relative;
-  bottom: 35px;
-  left: 50%;
+  position: absolute;
+  top: -15px;
+  left: 49.8%;
 }
 .theme_menu .caret  {
-  position: relative;
-  bottom: 35px;
-  left: 30%;
+  position: absolute;
+  top: -15px;
+  left: 36%;
+}
+
+
+#paneltool{
+  width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    left: auto;
+    z-index: 1050;
+    box-shadow: 0 1px 3px #999;
+    transition-duration: .2s;
+    transition-property: left, right, top, bottom, width, margin;
+    background: none repeat scroll 0px 0px #f5f5f5;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+.paneltool{
+    position: fixed;
+    top: 120px;
+    transition: all .6s ease 0s;
+    right: -325px;
+    left: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px -1px 3px #888;
+    z-index: 999;
+}
+.panelbutton{
+  background-color: var(--color_fff);
+border: 1px solid #ccc;
+border-left: none;
+padding: 9px 11px;
+position: absolute;
+left: -40px;
+right: auto;
+top: 10px;
+cursor: pointer;
+box-shadow: 3px -1px 5px #888;
+}
+.panelcontent{
+background-color: var(--color_fff);
+width: 320px;
+min-height: 210px;
+}
+.panelinner{
+  padding:20px;
+}
+.panelinner>span{
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.group-input{
+
+}
+.control-label{
+
+}
+.paneltool-update{
+
+}
+.control-span{
+
 }
 
