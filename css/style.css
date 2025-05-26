@@ -493,7 +493,8 @@ a.product-name {
 .navbar_item a {
   color: #000;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 12px; 
+  font-weight: 500;
 }
 .navbar_item a span {
   line-height: 4rem;
@@ -517,6 +518,7 @@ a.product-name {
   left: 26.4%;
   background-color: var(--color_fff);
 }
+
 .dropdown_menu-inside {
 }
 .dropdown_menu-inside ul {
@@ -669,3 +671,29 @@ a.product-name {
   background-color: var(--color_fff);
   box-shadow: 0 0 5px #0000003d;
 }
+.home_menu .caret  {
+  position: relative;
+  bottom: 35px;
+  left: 20px;
+}
+.shop_menu .caret  {
+  position: relative;
+  bottom: 35px;
+  left: 35.5%;
+}
+.pages_menu .caret  {
+  position: relative;
+  bottom: 35px;
+  left: 42.7%;
+}
+.blog_menu .caret  {
+  position: relative;
+  bottom: 35px;
+  left: 50%;
+}
+.theme_menu .caret  {
+  position: relative;
+  bottom: 35px;
+  left: 30%;
+}
+
