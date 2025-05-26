@@ -493,7 +493,7 @@ a.product-name {
 .navbar_item a {
   color: #000;
   text-decoration: none;
-  font-size: 12px; 
+  font-size: 12px;
   font-weight: 500;
 }
 .navbar_item a span {
@@ -649,18 +649,18 @@ a.product-name {
   left: 120%;
   top: 23%;
 }
-.dropdown_menu-in{
+.dropdown_menu-in {
   width: 100%;
 }
-.dropdown_menu-in ul li{
+.dropdown_menu-in ul li {
   width: 100%;
 }
 .header-option {
   left: 120%;
   top: 50%;
 }
-.menu_item_option:hover .submenu{
-    height: auto;
+.menu_item_option:hover .submenu {
+  height: auto;
   width: 200px;
   padding: 10px 20px;
   left: 90%;
@@ -671,78 +671,78 @@ a.product-name {
   background-color: var(--color_fff);
   box-shadow: 0 0 5px #0000003d;
 }
-.home_menu .caret  {
+.home_menu .caret {
   position: absolute;
   top: -15px;
   left: 36px;
 }
-.shop_menu .caret  {
+.shop_menu .caret {
   position: absolute;
   top: -15px;
   left: 36%;
 }
-.pages_menu .caret  {
-   position: absolute;
+.pages_menu .caret {
+  position: absolute;
   top: -15px;
   left: 43%;
 }
-.blog_menu .caret  {
+.blog_menu .caret {
   position: absolute;
   top: -15px;
   left: 49.8%;
 }
-.theme_menu .caret  {
+.theme_menu .caret {
   position: absolute;
   top: -15px;
   left: 36%;
 }
 
-
-#paneltool{
+#paneltool {
   width: 300px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: -320px;
-    left: auto;
-    z-index: 1050;
-    box-shadow: 0 1px 3px #999;
-    transition-duration: .2s;
-    transition-property: left, right, top, bottom, width, margin;
-    background: none repeat scroll 0px 0px #f5f5f5;
-    border-right: 1px solid rgba(0, 0, 0, .2);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  left: auto;
+  z-index: 1050;
+  box-shadow: 0 1px 3px #999;
+  transition-duration: 0.2s;
+  transition-property: left, right, top, bottom, width, margin;
+  background: none repeat scroll 0px 0px #f5f5f5;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-.paneltool{
-    position: fixed;
-    top: 120px;
-    transition: all .6s ease 0s;
-    right: -325px;
-    left: auto;
-    border: 1px solid #CCC;
-    box-shadow: 1px -1px 3px #888;
-    z-index: 999;
+.paneltool {
+  position: fixed;
+  top: 120px;
+  transition: all 0.6s ease 0s;
+  /* right: -325px; */
+  right: 0;
+  left: auto;
+  border: 1px solid #ccc;
+  box-shadow: 1px -1px 3px #888;
+  z-index: 999;
 }
-.panelbutton{
+.panelbutton {
   background-color: var(--color_fff);
-border: 1px solid #ccc;
-border-left: none;
-padding: 9px 11px;
-position: absolute;
-left: -40px;
-right: auto;
-top: 10px;
-cursor: pointer;
-box-shadow: 3px -1px 5px #888;
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 9px 11px;
+  position: absolute;
+  left: -40px;
+  right: auto;
+  top: 10px;
+  cursor: pointer;
+  box-shadow: 3px -1px 5px #888;
 }
-.panelcontent{
-background-color: var(--color_fff);
-width: 320px;
-min-height: 210px;
+.panelcontent {
+  background-color: var(--color_fff);
+  width: 320px;
+  min-height: 210px;
 }
-.panelinner{
-  padding:20px;
+.panelinner {
+  padding: 20px;
 }
-.panelinner>span{
+.panelinner > span {
   margin-bottom: 10px;
   margin-top: 0;
   font-size: 15px;
@@ -750,16 +750,48 @@ min-height: 210px;
   color: #000;
   text-transform: uppercase;
 }
-.group-input{
-
+.group-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+ grid: 'label'
+ 'upsate' 'update';
 }
-.control-label{
-
+.control-label {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 0;
+  margin: 0;
+  width: 100%;
+  color: #848484;
+  grid-area:label ;
 }
-.paneltool-update{
-
+.control-label img{
+  width: 20px;
 }
-.control-span{
-
+.paneltool-update {
+  font-size: 12px;
+  color: #333;
+  padding: 8px 6px;
+  grid-area: update;
 }
-
+.control-span {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 0;
+  width: 100%;
+  display: block;
+  color: #333;
+}
+.layout-control{
+  width: 100%;
+}
+.layout-control:last-child span{
+  justify-self: flex-start;
+}
+.selected{
+  
+}
