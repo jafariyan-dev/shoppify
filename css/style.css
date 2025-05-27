@@ -807,7 +807,7 @@ a.product-name {
 .onoffswitch-label {
   display: block !important;
   margin: 0 !important;
-  overflow:hidden;
+  overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -818,9 +818,10 @@ a.product-name {
   margin-left: -100%;
   transition: margin 0.3s ease-in 0s;
 }
-.onoffswitch-inner::before , .onoffswitch-inner::after {
+.onoffswitch-inner::before,
+.onoffswitch-inner::after {
   float: left;
-  display:block ;
+  display: block;
   padding: 0;
   width: 50%;
   height: 35px;
@@ -854,5 +855,58 @@ a.product-name {
   bottom: 0;
   right: 50px;
   transition: all 0.3s ease-in 0s;
-  /* height: 18px; */
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.sliderLayer {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  height: 200px;
+}
+
+.slideshow nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.slider nav button {
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+}
+
+#prev{
+width: 20px;
+}
+#next{
+width: 20px;
 }
