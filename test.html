@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Slider Example</title>
+  <style>
+    /* Slider Container */
+    .slider {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+
+    /* Slides Wrapper */
+    .slides {
+      display: flex;
+      width: 300%; /* 3 slides for example */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Each Slide */
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      height: 200px;
+    }
+
+    /* Navigation Arrows */
+    .slider nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .slider nav button {
+      pointer-events: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <!-- Replace with your image paths -->
+        <img src="https://ap-golmart.myshopify.com/cdn/shop/t/3/assets/slideshow_image_1_2x.jpg?v=178103731659532258761445247735" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="https://ap-golmart.myshopify.com/cdn/shop/t/3/assets/slideshow_image_2_2x.jpg?v=38487751379524132561445247744" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="https://ap-golmart.myshopify.com/cdn/shop/t/3/assets/slideshow_image_3_2x.jpg?v=523670075589432551445247752" alt="Slide 3">
+      </div>
+    </div>
+    <nav>
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </nav>
+  </div>
+
+  <script>
+    // Select elements
+    const slides = document.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+    const next = document.getElementById('next');
+    const prev = document.getElementById('prev');
+    
+    let currentIndex = 0;
+
+    // Function to update the visible slide
+    function showSlide(index) {
+      // Loop the slider when reaching the end or beginning
+      if (index < 0) {
+        currentIndex = slide.length - 1;
+      } else if (index >= slide.length) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+      // Shift slides using transform
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Event listeners for navigation arrows
+    next.addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+    });
+    
+    prev.addEventListener('click', () => {
+      showSlide(currentIndex - 1);
+    });
+
+    // Optional: Auto-play slider every 5 seconds
+    setInterval(() => {
+      showSlide(currentIndex + 1);
+    }, 5000);
+  </script>
+  
+</body>
+</html>

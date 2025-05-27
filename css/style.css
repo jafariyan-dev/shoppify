@@ -5,6 +5,7 @@
   --color_666: #666;
   --color_e6e6e6: #e6e6e6;
   --color_0000002d: #0000002d;
+  --color_34a7c1: #34a7c1;
 }
 * {
   margin: 0;
@@ -750,13 +751,6 @@ a.product-name {
   color: #000;
   text-transform: uppercase;
 }
-.group-input {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
- grid: 'label'
- 'upsate' 'update';
-}
 .control-label {
   text-transform: uppercase;
   text-align: left;
@@ -766,16 +760,19 @@ a.product-name {
   margin: 0;
   width: 100%;
   color: #848484;
-  grid-area:label ;
+  display: block;
 }
-.control-label img{
+.control-label img {
   width: 20px;
 }
 .paneltool-update {
   font-size: 12px;
   color: #333;
   padding: 8px 6px;
-  grid-area: update;
+  display: inline;
+  align-self: flex-end;
+  width: 50%;
+  float: left;
 }
 .control-span {
   text-transform: uppercase;
@@ -786,12 +783,76 @@ a.product-name {
   display: block;
   color: #333;
 }
-.layout-control{
+.layout-control {
   width: 100%;
 }
-.layout-control:last-child span{
-  justify-self: flex-start;
+
+.selected {
+  font-weight: 700;
 }
-.selected{
-  
+.float-control {
+  width: 100%;
+  text-align: center;
+}
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.onoffswitch-checkbox {
+  display: none;
+  box-sizing: border-box;
+}
+.onoffswitch-label {
+  display: block !important;
+  margin: 0 !important;
+  overflow:hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner::before , .onoffswitch-inner::after {
+  float: left;
+  display:block ;
+  padding: 0;
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.onoffswitch-inner::before {
+  content: "ON";
+  padding-left: 20px;
+  background-color: var(--color_34a7c1);
+  color: var(--color_fff);
+  text-align: left;
+}
+.onoffswitch-inner::after {
+  content: "OF";
+  padding-right: 20px;
+  background-color: #eee;
+  color: #999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 11px;
+  background-color: var(--color_fff);
+  border: 2px solid var(--color_fff);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50px;
+  transition: all 0.3s ease-in 0s;
+  /* height: 18px; */
 }
