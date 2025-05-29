@@ -873,28 +873,28 @@ a.product-name {
   background: url(https://ap-golmart.myshopify.com/cdn/shop/t/3/assets/loading.gif?v=74321011833449561481445245153)
     no-repeat center center;
 }
-.parent_slider a img {
+.imageLink{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 6;
-  display: none;
-  opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+    display: none;
 }
+
+
 .img-responsive {
-  display: block;
-  max-width: 100%;
+  max-width: 1521px;
   height: auto;
   margin: 0 auto;
 }
 .main_image {
   display: inline;
-  width: 1521px;
+  width: 1520px;
   height: 459px;
 }
 .slider_caption {
