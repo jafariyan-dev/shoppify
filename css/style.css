@@ -902,7 +902,6 @@ a.product-name {
   left: 0;
   width: 100%;
   z-index: 8;
-  display: none;
   opacity: 1;
   top: 20%;
 }
@@ -913,10 +912,18 @@ a.product-name {
   margin: 0 auto;
   z-index: 9;
 }
-.slide_caption {
+.caption_1{
   top: 0;
+  left: auto;
+  right: 0;
+}
+.slide_caption {
+  position: absolute;
+  margin: 0 auto;
+  width: 480px;
   left: 0;
-  right: auto;
+  right: 0;
+  z-index: 9;
 }
 .text_first {
   font-size: 24px;
@@ -933,11 +940,17 @@ a.product-name {
 }
 .slide_caption h3 {
   color: var(--color_f44336);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 40px;
+  line-height: 35px;
 }
 .slide_caption .btn_slide {
   border: 1px solid #f44336;
   background: #f44336;
   color: #fff;
+  text-decoration: none;
   margin: 5px 40px 0;
   padding: 0 15px;
   line-height: 42px;
@@ -948,6 +961,13 @@ a.product-name {
   text-transform: uppercase;
   transition: all 0.3s ease;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.slide_caption p{
+  font-size: 13px;
+  line-height: 18px;
+  padding: 10px 40px;
+  letter-spacing: 0;
+
 }
 .btn_slide{
   transition: all 0.3s ease;
@@ -966,7 +986,13 @@ a.product-name {
     font-size: 12px;
     line-height: 1.42857;
     border-radius: 0;
-    user-select: none;
+
+}
+.caption_3{
+  display: block;
+  top: 0;
+  left: 0;
+  right: auto;
 }
 .caption_3 a {
   animation-delay: 2s;
@@ -1039,8 +1065,14 @@ transition: all 0.35s ease;
 .slide-caption .caption_3 p,
 .slide-caption .caption_3 a,
 .nivo-caption .caption_3 .text_first {
-  animation-name: fade;
-  animation-duration: 1s;
-  animation-fill-mode: backwards;
-  animation-iteration-count: none;
+  animation: fade 1s   none  backwards;
+ 
+}
+@keyframes fade{
+  0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
 }

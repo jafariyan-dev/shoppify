@@ -4,6 +4,7 @@ const next = document.querySelector(".slider_next");
 const prev = document.querySelector(".slider_prev");
 const mainImageEl = document.querySelector(".main_image");
 const imgResponsiveEl = document.querySelectorAll(".img-responsive");
+const slideCaptionEl = document.querySelector(".slide_caption");
 
 let currentIndex = -1;
 let imgResposiveIndex = -1;
@@ -14,35 +15,30 @@ function showSlide(index) {
     imgResposiveIndex = imgResponsiveEl.length - 1;
     slide[imgResposiveIndex].display = "block";
     mainImageEl.src = imgResponsiveEl[imgResposiveIndex].src;
-
-  } if (index >= slide.length) {
+  }
+  if (index >= slide.length) {
     currentIndex = 0;
     imgResposiveIndex = 0;
     slide[imgResposiveIndex].display = "block";
     mainImageEl.src = imgResponsiveEl[imgResposiveIndex].src;
-  
   } else {
     currentIndex = index;
     imgResposiveIndex = index;
     slide[imgResposiveIndex].display = "block";
     mainImageEl.src = imgResponsiveEl[imgResposiveIndex].src;
-
   }
   // Shift slides
   sliderLayerEl.style.transform = `translateX(0%)`;
   slide[imgResposiveIndex].display = "none";
-
-
+  slideCaptionEl.classList.add(`caption_${index}`);
+  slideCaptionEl.classList.remove(`caption_${index - 1}`);
 }
 
-// Event listeners for navigation arrows
-
-next.addEventListener('click', () => {
+next.addEventListener("click", () => {
   showSlide(currentIndex + 1);
 });
 
-
-prev.addEventListener('click', () => {
+prev.addEventListener("click", () => {
   showSlide(currentIndex - 1);
 });
 
@@ -50,4 +46,3 @@ prev.addEventListener('click', () => {
 setInterval(() => {
   showSlide(currentIndex + 1);
 }, 5000);
-
