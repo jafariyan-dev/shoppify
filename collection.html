@@ -700,13 +700,32 @@
               </div>
               <h1 class="page_heading">gifts, parties & holiday</h1>
               <div class="category_heading">
-                <div class="sort_page_buttons row-margin">
+                <div class="sort_page_buttons row">
                   <div class="left_sort_buttons">
                     <div class="product_layout">
-                      <button class="change"></button>
+                      <button class="change_layout change_layout-active">
+                        <i class='fa fa-th-large'></i>
+                      </button>
+                      <button class="change_layout">
+                        <i class='fa fa-list-ul'></i>
+                      </button>
                     </div>
                   </div>
-                  <div class="right_sort_buttons"></div>
+                  <div class="right_sort_buttons">
+                    <div class="sort_form">
+                      <label for="SortBy">Sort By</label>
+                     <select name="SortBy" id="SortBy">
+                        <option value="manual">Featured</option>
+                        <option value="best-selling">Best Selling</option>
+                        <option value="title-asc">Alphabetically, A-Z</option>
+                        <option value="title-desc">Alphabetically, Z-A</option>
+                        <option value="price-asc">Price, low to high</option>
+                        <option value="price-desc">Price, high to low</option>
+                        <option value="created-desc">Date, new to old</option>
+                        <option value="created-asc">Date, old to new</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="center_wrap">
