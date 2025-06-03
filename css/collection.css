@@ -725,11 +725,14 @@ a.product-name {
 .main_content {
 }
 
-.page_guide .container {
-}
-.page_guide {
-}
-.guide_nav {
+
+.page_heading{
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 .guide_link {
   padding: 20px 0;
@@ -840,6 +843,18 @@ font-weight: 300;
   padding: 0;
 }
 .product_list {
+background-color: var(--color_fff);
+padding: 0 17px;
+border-right: 1px solid var(--color_e6e6e6);
+border-left: 1px solid var(--color_e6e6e6);
+}
+.product_items{
+border-bottom: 1px solid var(--color_e6e6e6);
+position: relative;
+z-index: 99;
+}
+.product_block{
+
 }
 .product_theme {
   display: block;
