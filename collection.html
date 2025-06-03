@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shoppify</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="/css/font.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  </head>
-  <body>
-    <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts, Parties & Holiday</title>
+        <link rel="stylesheet" href="./css/collection.css" />
+        <link rel="stylesheet" href="./css/font.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+     <header>
       <div class="header_top">
         <div class="container">
           <div class="header_top">
@@ -671,44 +671,44 @@
       </div>
     </header>
     <main class="main_content">
-      <section class="slideshow">
-        <div class="slider-container">
-          <div id="sliderLayer" class="clearfix parent_slider">
-  
-      <a class="slide-link imageLink">
-        <img class="img-responsive" src="images/slider_img1.png" alt="Slide 1">
-      </a>
-      <a class="slide-link imageLink">
-        <img class="img-responsive" src="images/slider_img2.png" alt="Slide 2">
-      </a>
-      <a class="slide-link imageLink">
-        <img class="img-responsive" src="images/slider_img3.png" alt="Slide 3">
-      </a>
-      <img  src="" class="main_image">
-      <div class="slider_caption">
-        <div class="caption_fullwidth container">
-          <div class="slide_caption caption_1">
-            <div>
-              <div class="text_first"></div>
-              <h3> on Friday <br> SALE off up 50%</h3>
-              <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris</p>
-              <a href="#" class="btn btn_slide">Shop Now </a>
+        <section class="page_guide">
+            <div class="container">
+                <div class="guide_nav">
+                    <ol class="guide_link">
+                      <li id="first_li">
+                        <i class="fa fa-home"></i>
+                        <a href="#">
+                          <span>Home</span>
+                        </a>
+                      </li>
+                      <li class="on">
+                        <i class='fa fa-angle-right'></i>
+                        <span>Gifts, Parties & Holiday</span>
+                      </li>
+                    </ol>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider_direction">
-       <a class="slider_next">Next</a>
-       <a class="slider_prev">Prev</a>
-      </div>
-    </div>
-    </div>
- 
-      </section>
-      <section id="columns" class="columns-container">
+        </section>
+        <section id="columns" class="columns-container">
         <div class="container">
           <div class="row-margin">
-            <div id="center_column" class="center_column" >
+            <div id="center_column" class="center_column">
+              <div class="content_baner">
+                <div class="image_baner">
+                  <img src="images/baner_image.png" alt="baner" class="img_responsive">
+                </div>
+              </div>
+              <h1 class="page_heading">gifts, parties & holiday</h1>
+              <div class="category_heading">
+                <div class="sort_page_buttons row-margin">
+                  <div class="left_sort_buttons">
+                    <div class="product_layout">
+                      <button class="change"></button>
+                    </div>
+                  </div>
+                  <div class="right_sort_buttons"></div>
+                </div>
+              </div>
               <div class="center_wrap">
                 <div class="row-margin">
                   <div class="top_products">
@@ -1214,61 +1214,5 @@
         </div>
       </section>
     </main>
-    <footer></footer>
-
-
-
-    <div id="paneltool">
-    <div class="paneltool">
-        <div class="panelbutton">
-            <img src="images/setting icon.png" alt="params.svg">
-        </div>
-        <div class="panelcontent ">
-            <div class="panelinner">
-                <span>Panel Tool</span>
-                <div class="group-input">
-                    <label class="control-label"><img src="images/thumbtacks.png" alt=""> Float style</label>
-                    <div class="paneltool-update">
-                        <span class="control-span">Float header</span>
-                        <div class="float-control">
-                          <div class="onoffswitch">
-                              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="floatHeader">
-                              <label class="onoffswitch-label" for="floatHeader">
-                                  <span class="onoffswitch-inner"></span>
-                                  <span class="onoffswitch-switch"></span>
-                              </label>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="paneltool-update">
-                        <span class="control-span">Float topbar</span>
-                        <div class="float-control">
-                          <div class="onoffswitch">
-                              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="floatTopbar">
-                              <label class="onoffswitch-label" for="floatTopbar">
-                                  <span class="onoffswitch-inner"></span>
-                                  <span class="onoffswitch-switch"></span>
-                              </label>
-                          </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="group-input clearfix">
-                    <label class="control-label"><i class="fa fa-desktop"></i> Layout mode</label>
-                    <div class="layout-control clearfix">
-                        <span class="dynamic-update-layout paneltool-update selected" data-layout-mode="layout-default">Default</span>
-                        <span class="dynamic-update-layout paneltool-update " data-layout-mode="layout-boxed-lg">Boxed Large</span>
-                    </div>
-                </div>
-              	
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<script src="js/panel.js"></script>
-    <script src="js/slider.js" defer></script>
-  </body>
+</body>
 </html>
