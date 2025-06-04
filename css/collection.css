@@ -34,6 +34,9 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
+body{
+  background-color: var(--color_aeaeaee6);
+}
 header {
 }
 .header_top {
@@ -812,74 +815,23 @@ font-weight: 300;
 }
 .image_baner {
 }
-.center_wrap {
-  overflow: hidden;
-}
-.top_products {
-  padding: 0 15px;
-}
-.products_block {
-  position: relative;
-  z-index: 1;
-  margin-top: 30px;
-}
-.top_products-heading {
-  position: relative;
-  background: #fff;
-  font-family: Rhodium Libre;
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 20px;
-  color: #f44336;
-  border-top: 3px solid #f44336;
-  line-height: normal;
-}
-.block_content {
-  border-top: 1px solid var(--color_e6e6e6);
-  border-bottom: 1px solid var(--color_e6e6e6);
-  background-color: var(--color_fff);
-  padding: 0;
-}
+
 .product_list {
 background-color: var(--color_fff);
 padding: 0 17px;
 border-right: 1px solid var(--color_e6e6e6);
 border-left: 1px solid var(--color_e6e6e6);
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(5,1fr);
 }
 .product_items{
 border-bottom: 1px solid var(--color_e6e6e6);
 position: relative;
 z-index: 99;
-}
-.product_block{
-
-}
-.product_theme {
-  display: block;
-  position: relative;
-  width: 100%;
-}
-.wrapper_outer {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  direction: ltr !important;
-}
-.wrapper {
-  width: 4688px;
-  left: 0px;
-  display: block;
-  transition: 1000ms;
-  transform: translate3d(0px, 0px, 0px);
-  display: flex;
-  gap: 15px;
-}
-.wrapper_item {
-  width: 293px;
-  margin: 0;
-  padding: 0;
+display: grid;
+grid-template-columns: repeat(4, 290px);
+grid-template-rows: 100%;
 }
 .product_block {
   visibility: visible;
@@ -910,20 +862,16 @@ z-index: 99;
   margin: 0;
   padding: 15px 15px 0;
   box-sizing: border-box;
-  text-align: left;
 }
 .product_image_container {
-  position: relative;
   overflow: hidden;
+  position: relative;
   text-align: center;
   border-radius: 0;
   margin: 0;
   border: 0px;
 }
-.product_image_link {
-}
-.replace-2x {
-}
+
 .img_responsive {
   display: block;
   max-width: 100%;
@@ -940,7 +888,7 @@ z-index: 99;
   opacity: 0;
   transform-style: preserve-3d;
   transition: all 0.6s ease-in-out;
-  transform: rotateY(90deg);
+  transform: rotateY(-90deg);
 }
 .product_meta {
   position: relative;
@@ -961,20 +909,11 @@ z-index: 99;
   color: #000;
   font-size: 12px;
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   line-height: 20px;
 }
-.prudoct_desc {
-  overflow: hidden;
-  display: none;
-  padding: 5px 0;
-  color: #000;
-  font-size: 12px;
-  font-weight: 300;
-}
-.review {
-}
+
 .product_reviews_badge {
 }
 .content_price {
@@ -991,26 +930,21 @@ z-index: 99;
   bottom: -40px;
   left: -15px;
   right: -15px;
-  background: #fff;
+  background:var(--color_fff);
   z-index: 3;
   visibility: hidden;
   opacity: 0;
-  filter: alpha(opacity=0);
   transition: all 0.35s ease-in-out 0s;
   display: flex;
 }
 .cart {
   align-self: flex-end;
 }
-.action {
-}
+
 .add-cart {
   background: #000;
   color: var(--color_fff);
   font-size: 12px;
-  font-family: Poppins;
-  font-weight: 300;
-  text-transform: uppercase;
   text-align: center;
   border: 1px solid black;
   display: block;
@@ -1020,12 +954,7 @@ z-index: 99;
   margin-right: 4px;
   transition: all 0.3s ease 0s;
 }
-.add-cart span {
-  display: inline-block;
-  font: normal normal normal 14px / 1 "Material-Design-Iconic-Font";
-  font-size: inherit;
-  text-rendering: auto;
-}
+
 .zmdi {
   font-size: 16px;
   display: inline-block;
@@ -1042,6 +971,7 @@ z-index: 99;
   align-self: flex-end;
 }
 .product_buttons .btn {
+  display: block;
   height: 35px;
   width: 35px;
   font-size: 16px;
@@ -1056,13 +986,12 @@ z-index: 99;
   border-color: var(--color_999);
   transition: all 0.35s ease;
 }
-.product_buttons .btn span {
-  font-size: 0px;
-}
 .btn-wishlist {
   align-self: flex-end;
 }
-
+.view_detail{
+align-self: flex-end;
+}
 .quickview {
   align-self: flex-end;
   width: 100%;
