@@ -914,8 +914,6 @@ grid-template-rows: 100%;
   line-height: 20px;
 }
 
-.product_reviews_badge {
-}
 .content_price {
   padding: 5px 0;
 }
@@ -935,7 +933,9 @@ grid-template-rows: 100%;
   visibility: hidden;
   opacity: 0;
   transition: all 0.35s ease-in-out 0s;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,39px);
+
 }
 .cart {
   align-self: flex-end;
@@ -964,9 +964,7 @@ grid-template-rows: 100%;
   vertical-align: middle;
 }
 
-.zmdi-shopping-cart-plus i {
-  margin-top: 5px;
-}
+
 .wishlist {
   align-self: flex-end;
 }
@@ -993,8 +991,8 @@ grid-template-rows: 100%;
 align-self: flex-end;
 }
 .quickview {
-  align-self: flex-end;
   width: 100%;
+  grid-column: span 2;
 }
 .quick-view {
   margin: 0;
