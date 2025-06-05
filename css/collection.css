@@ -847,7 +847,6 @@ grid-template-rows: 100%;
 .product_block {
   visibility: visible;
   animation-name: fadeIn;
-  animation-delay: 0s;
   border-left:  1px solid var(--color_e6e6e6);
 }
 .product_block:last-child{
@@ -1027,4 +1026,41 @@ align-self: flex-end;
 .quick-view i {
   font-size: 10px;
   display: none;
+}
+
+.page_listbar{
+background-color: var(--color_fff);
+border:1px solid var(--color_e6e6e6);
+text-align: left;
+margin-bottom: 20px;
+padding: 10px 20px;
+}
+.listbar_inner{
+}
+.pages_list{
+margin: 0;
+display: flex;
+align-items: flex-start;
+list-style-type: none;
+gap: 10px;
+}
+.pages_list li{
+  padding: 3px 12px;
+}
+.pages_list li span{
+  color: var(--color_666);
+  font-size: 12px;
+}
+.previous_page{
+
+}
+.active{
+border: 1px solid var(--color_e6e6e6);
+}
+.active span{
+  text-align: center;
+color: var(--color_f44336) !important;
+}
+.next_page{
+
 }
